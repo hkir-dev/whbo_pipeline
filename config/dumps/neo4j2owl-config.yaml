@@ -15,49 +15,112 @@ represent_values_and_annotations_as_json:
 
 neo_node_labelling:
   - classes:
-      - CL:0011005
-      - RO:0015002 some CL:0011005
-    label: GABAergic
+      - CL:0000129
+      - RO:0015002 some CL:0000129
+    label: Microglia
   - classes:
-      - CL:0000679
-      - RO:0015002 some CL:0000679
-    label: Glutamatergic
+      - CL:4023072
+      - RO:0015002 some CL:4023072
+    label: Vascular
+  - classes:
+      - CL:0000057
+      - RO:0015002 some CL:0000057
+    label: Fibroblast
   - classes:
       - CL:0002453
       - RO:0015002 some CL:0002453
-    label: OPC
+    label: Oligodendrocyte precursor
   - classes:
-      - CL:0000127
-      - RO:0015002 some CL:0000127
-    label: Astrocyte
+      - CL:4023059
+      - RO:0015002 some CL:4023059
+    label: Committed oligodendrocyte precursor
   - classes:
       - CL:0000128
       - RO:0015002 some CL:0000128
     label: Oligodendrocyte
   - classes:
-      - CL:0000115
-      - RO:0015002 some CL:0000115
-    label: Endothelial
+      - CL:0000127
+      - RO:0015002 some CL:0000127
+    label: Astrocyte
   - classes:
-      - CL:0000359
-      - RO:0015002 some CL:0000359
-    label: SMC
+      - CL:0000065
+      - RO:0015002 some CL:0000065
+    label: Ependymal
   - classes:
-      - CL:0000669
-      - RO:0015002 some CL:0000669
-    label: Pericyte
+      - CL:4023073
+      - RO:0015002 some CL:4023073
+    label: Choroid plexus
   - classes:
-      - CL:0000129
-      - RO:0015002 some CL:0000129
-    label: Microglial
+      - CL:4023012
+      - RO:0015002 some CL:4023012
+    label: DL NP
   - classes:
-      - CL:4023051
-      - RO:0015002 some CL:0000129
-    label: VLMC
+      - CL:0000679
+      - RO:0015002 some CL:0000679
+    label: DL corticothalamic
   - classes:
-      - CL:4023065
-      - RO:0015002 some CL:4023065
-    label: Meis2
+      - CL:4023060
+      - RO:0015002 some CL:4023060
+    label: Hippocampal CA1_3
+  - classes:
+      - CL:4023008
+      - RO:0015002 some CL:4023008
+    label: UL intratelencephalic
+  - classes:
+      - CL:4023008
+      - RO:0015002 some CL:4023008
+    label: DL intratelencephalic
+  - classes:
+      - CL:4023039
+      - RO:0015002 some CL:4023039
+    label: Amygdala excitatory    
+  - classes:
+      - CL:4023061
+      - RO:0015002 some CL:4023061
+    label: Hippocampal CA4 
+  - classes:
+      - CL:4023062
+      - RO:0015002 some CL:4023062
+    label: Hippocampal DG 
+  - classes:
+      - CL:1001474
+      - RO:0015002 some CL:1001474
+    label: Medium spiny neuron 
+  - classes:
+      - CL:1001474
+      - RO:0015002 some CL:1001474
+    label: Eccentric MSN 
+  - classes:
+      - CL:4023063
+      - RO:0015002 some CL:4023063
+    label: MGE 
+  - classes:
+      - CL:0000402
+      - RO:0015002 some CL:0000402
+    label: LAMP5_LHX6 
+  - classes:
+      - CL:4023064
+      - RO:0015002 some CL:4023064
+    label: CGE 
+  - classes:
+      - CL:4023057
+      - RO:0015002 some CL:4023057
+    label: Cerebellar 
+  - classes:
+      - CL:4023074
+      - RO:0015002 some CL:4023074
+    label: Mammillary body 
+  - classes:
+      - CL:4023068
+      - RO:0015002 some CL:4023068
+    label: MThalamic excitatory 
+  - classes:
+      - CL:4023079
+      - RO:0015002 some CL:4023079
+    label: MD inhibitory 
+
+
+
   - classes:
       - UBERON:0002616
       - RO:0015002 some UBERON:0002616
@@ -70,81 +133,41 @@ neo_node_labelling:
       - PCL:0010001
       - RO:0015002 some PCL:0010001
     label: Cluster
+
+    ## Brain regions
   - classes:
-      - NCBITaxon:131567
-      - RO:0015002 some NCBITaxon:131567
-    label: Organism
+      - RO_0002100 some HBA:4327
+    label: Amygdala
   - classes:
-      - PATO:0010006
-      - RO:0015002 some PATO:0010006
-    label: morphology
+      - RO_0002100 some HBA:9131
+    label: Pons
   - classes:
-      - PATO:0070033
-      - RO:0015002 some PATO:0070033
-    label: projection
-##Morphological subclasses##
+      - RO_0002100 some HBA:4249
+    label: Hippocampus
   - classes:
-      - RO:0000053 some PATO:0070026
-    label: Multipolar
+      - RO_0002100 some HBA:9525
+    label: Spinal cord
   - classes:
-      - RO:0000053 some PATO:0070015
-    label: Pyramidal
+      - RO_0002100 some HBA:4300
+    label: Basal forebrain
   - classes:
-      - RO:0000053 some PATO:0070019
-    label: Untufted_pyramidal
+      - RO_0002100 some HBA:4540
+    label: Hypothalamus
   - classes:
-      - RO:0000053 some PATO:0070007
-    label: Martinotti
+      - RO_0002100 some HBA:4008
+    label: Cerebral cortex
   - classes:
-      - RO:0000053 some PATO:0070009
-    label: Fan_Martinotti
+      - RO_0002100 some HBA:9512
+    label: Medulla
   - classes:
-      - RO:0000053 some PATO:0070008
-    label: T_Martinotti
+      - RO_0002100 some HBA:4696
+    label: Cerebellum
   - classes:
-      - RO:0000053 some PATO:0070001
-    label: Neurogliaform
+      - RO_0002100 some HBA:9001
+    label: Midbrain
   - classes:
-      - RO:0000053 some PATO:0070011
-    label: Chandelier
-  - classes:
-      - RO:0000053 some PATO:0070006
-    label: Bipolar
-##Projection subclasses##
-  - classes:
-      - RO:0000053 some PATO:0070028
-    label: Extratelencephalic
-  - classes:
-      - RO:0000053 some PATO:0070034
-    label: Intratelencephalic
-  - classes:
-      - RO:0000053 some PATO:0070029
-    label: Corticothalamic
-  - classes:
-      - RO:0000053 some PATO:0070030
-    label: Near_projecting
-  - classes:
-      - RO:0000053 some PATO:0070031
-    label: Corticomedulla
-##specific badges##
-  - classes:
-      - RO:0002162 some NCBITaxon:10090
-    label: Mus_musculus
-  - classes:
-      - RO:0002162 some NCBITaxon:9606
-    label: Homo_sapiens
-  - classes:
-      - RO:0002162 some NCBITaxon:9483
-    label: Callithrix_jacchus
-  - classes:
-      - RO:0002100 some UBERON:0000956
-    label: Cerebral_cortex
-  - classes:
-      - RO:0002100 some UBERON:0001384
-    label: Primary_motor_cortex
-  - classes:
-      - RO:0002100 some UBERON:0002771
-    label: MTG
+      - RO_0002100 some HBA:4392
+    label: Thalamus
 
 
 curie_map:
