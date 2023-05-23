@@ -29,15 +29,15 @@ neo_node_labelling:
   - classes:
       - CL:0002453
       - RO:0015002 some CL:0002453
-    label: Oligodendrocyte precursor
+    label: Oligo_precursor
   - classes:
       - CL:4023059
       - RO:0015002 some CL:4023059
-    label: Committed oligodendrocyte precursor
+    label: Committed_oligo
   - classes:
       - CL:0000128
       - RO:0015002 some CL:0000128
-    label: Oligodendrocyte
+    label: Oligo
   - classes:
       - CL:0000127
       - RO:0015002 some CL:0000127
@@ -49,47 +49,47 @@ neo_node_labelling:
   - classes:
       - CL:4023073
       - RO:0015002 some CL:4023073
-    label: Choroid plexus
+    label: Choroid_plexus
   - classes:
       - CL:4023012
       - RO:0015002 some CL:4023012
-    label: DL NP
+    label: DL_NP
   - classes:
       - CL:0000679
       - RO:0015002 some CL:0000679
-    label: DL corticothalamic
+    label: DL_corticothalamic
   - classes:
       - CL:4023060
       - RO:0015002 some CL:4023060
-    label: Hippocampal CA1_3
+    label: Hippo_CA1_3
   - classes:
       - CL:4023008
       - RO:0015002 some CL:4023008
-    label: UL intratelencephalic
+    label: UL_intratelencephalic
   - classes:
       - CL:4023008
       - RO:0015002 some CL:4023008
-    label: DL intratelencephalic
+    label: DL_intratelencephalic
   - classes:
       - CL:4023039
       - RO:0015002 some CL:4023039
-    label: Amygdala excitatory    
+    label: Amygdala_excitatory
   - classes:
       - CL:4023061
       - RO:0015002 some CL:4023061
-    label: Hippocampal CA4 
+    label: Hippocampal_CA4
   - classes:
       - CL:4023062
       - RO:0015002 some CL:4023062
-    label: Hippocampal DG 
+    label: Hippocampal_DG
   - classes:
       - CL:1001474
       - RO:0015002 some CL:1001474
-    label: Medium spiny neuron 
+    label: M_spiny_neuron
   - classes:
       - CL:1001474
       - RO:0015002 some CL:1001474
-    label: Eccentric MSN 
+    label: Eccentric_MSN
   - classes:
       - CL:4023063
       - RO:0015002 some CL:4023063
@@ -109,16 +109,15 @@ neo_node_labelling:
   - classes:
       - CL:4023074
       - RO:0015002 some CL:4023074
-    label: Mammillary body 
+    label: Mammillary
   - classes:
       - CL:4023068
       - RO:0015002 some CL:4023068
-    label: MThalamic excitatory 
+    label: MThalamic_exc
   - classes:
       - CL:4023079
       - RO:0015002 some CL:4023079
-    label: MD inhibitory 
-
+    label: MD_inhibitory
 
 
   - classes:
@@ -134,40 +133,55 @@ neo_node_labelling:
       - RO:0015002 some PCL:0010001
     label: Cluster
 
-    ## Brain regions
+  # NT
   - classes:
-      - RO_0002100 some HBA:4327
-    label: Amygdala
+      - RO:0002215 some GO:0061534
+    label: GABAergic
   - classes:
-      - RO_0002100 some HBA:9131
-    label: Pons
+      - RO:0002215 some GO:0061537
+    label: Glycinergic
   - classes:
-      - RO_0002100 some HBA:4249
-    label: Hippocampus
+      - RO:0002215 some GO:0061538
+    label: Histaminergic
   - classes:
-      - RO_0002100 some HBA:9525
-    label: Spinal cord
-  - classes:
-      - RO_0002100 some HBA:4300
-    label: Basal forebrain
-  - classes:
-      - RO_0002100 some HBA:4540
-    label: Hypothalamus
-  - classes:
-      - RO_0002100 some HBA:4008
-    label: Cerebral cortex
-  - classes:
-      - RO_0002100 some HBA:9512
-    label: Medulla
-  - classes:
-      - RO_0002100 some HBA:4696
-    label: Cerebellum
-  - classes:
-      - RO_0002100 some HBA:9001
-    label: Midbrain
-  - classes:
-      - RO_0002100 some HBA:4392
-    label: Thalamus
+      - RO:0002215 some GO:0061535
+    label: Glutamatergic
+
+
+#    ## Brain regions
+#  - classes:
+#      - RO:0002100 some HBA:4327
+#    label: Amygdala
+#  - classes:
+#      - RO:0002100 some HBA:9131
+#    label: Pons
+#  - classes:
+#      - RO:0002100 some HBA:4249
+#    label: Hippocampus
+#  - classes:
+#      - RO:0002100 some HBA:9525
+#    label: Spinal_cord
+#  - classes:
+#      - RO:0002100 some HBA:4300
+#    label: Basal_forebrain
+#  - classes:
+#      - RO:0002100 some HBA:4540
+#    label: Hypothalamus
+#  - classes:
+#      - RO:0002100 some HBA:4008
+#    label: Cerebral_cortex
+#  - classes:
+#      - RO:0002100 some HBA:9512
+#    label: Medulla
+#  - classes:
+#      - RO:0002100 some HBA:4696
+#    label: Cerebellum
+#  - classes:
+#      - RO:0002100 some HBA:9001
+#    label: Midbrain
+#  - classes:
+#      - RO:0002100 some HBA:4392
+#    label: Thalamus
 
 
 curie_map:
@@ -195,6 +209,8 @@ curie_map:
   SO: http://purl.obolibrary.org/obo/SO_
   OBI: http://purl.obolibrary.org/obo/OBI_
   PCL: http://purl.obolibrary.org/obo/PCL_
+  HBA: http://purl.obolibrary.org/obo/HBA_
+  GO: http://purl.obolibrary.org/obo/GO_
 
 filters:
   solr:
