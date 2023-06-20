@@ -15,6 +15,34 @@ represent_values_and_annotations_as_json:
 
 neo_node_labelling:
   - classes:
+      - CL:0000236
+      - RO:0015002 some CL:0000236
+    label: BCell
+  - classes:
+      - CL:0000084
+      - RO:0015002 some CL:0000084
+    label: TCell
+  - classes:
+      - CL:0000623
+      - RO:0015002 some CL:0000623
+    label: Natural_killer_cell
+  - classes:
+      - CL:0000576
+      - RO:0015002 some CL:0000576
+    label: Monocyte
+  - classes:
+      - CL:4023009
+      - RO:0015002 some CL:4023009
+    label: EP_GLut
+  - classes:
+      - CL:0010012
+      - RO:0015002 some CL:0010012
+    label: Cerebral_Cortex_Neuron
+  - classes:
+      - CL:0012001
+      - RO:0015002 some CL:0012001
+    label: Forebrain_Neuron
+  - classes:
       - CL:0000129
       - RO:0015002 some CL:0000129
     label: Microglia
