@@ -1,0 +1,15 @@
+MATCH(n:Class) WHERE n.curie STARTS WITH "PCL:" and n.definition IS NOT NULL
+WITH n
+OPTIONAL MATCH (n)-[has_exemplar_data]->(indv:Individual)
+OPTIONAL MATCH (n)-[loc:some_soma_located_in]->(region:Brain_Region)
+OPTIONAL MATCH (n)-[e:expresses]->(marker:Gene)
+OPTIONAL MATCH (n)-[ms:has_characterizing_marker_set]->(markerSet)
+RETURN DISTINCT	indv.short_form AS accession_id,
+	n.curie as PCL_id,
+	n.label as label,apoc.convert.fromJsonMap(n.definition[0])["value"] as definition,
+	apoc.text.join(apoc.convert.fromJsonMap(n.definition[0])["annotations"]["database_cross_reference"],",") as definition_ref,
+	apoc.text.join(COLLECT(DISTINCT region.label), ", ") as brain_region,
+	apoc.text.join(COLLECT(DISTINCT loc.comment[0]), " ") as brain_region_evidence,
+	apoc.text.join(COLLECT(DISTINCT marker.label), ", ") as markers,
+	markerSet.fbeta_confidence_score[0] as marker_fbeta_score
+ORDER BY toInteger(replace(n.curie,"PCL:",""))
