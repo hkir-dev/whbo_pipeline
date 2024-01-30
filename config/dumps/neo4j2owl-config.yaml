@@ -74,10 +74,10 @@ neo_node_labelling:
       - CL:0000065
       - RO:0015002 some CL:0000065
     label: Ependymal
-  - classes:
-      - CL:4023073
-      - RO:0015002 some CL:4023073
-    label: Choroid_plexus
+  # - classes:
+  #     - CL:4023073
+  #     - RO:0015002 some CL:4023073
+  #   label: Choroid_plexus
   - classes:
       - CL:4023012
       - RO:0015002 some CL:4023012
@@ -165,12 +165,12 @@ neo_node_labelling:
   - classes:
       - RO:0002215 some GO:0061534
     label: GABAergic
-  - classes:
-      - RO:0002215 some GO:0061537
-    label: Glycinergic
-  - classes:
-      - RO:0002215 some GO:0061538
-    label: Histaminergic
+  # - classes:
+  #     - RO:0002215 some GO:0061537
+  #   label: Glycinergic
+  # - classes:
+  #     - RO:0002215 some GO:0061538
+  #   label: Histaminergic
   - classes:
       - RO:0002215 some GO:0061535
     label: Glutamatergic
